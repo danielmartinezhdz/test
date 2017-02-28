@@ -1,0 +1,23 @@
+<b>Articles</b>
+
+<ul id="articles">
+	<%= render @articles%>
+</ul>
+
+<div ><p>Editar</p>
+	<div id="editar">
+		
+	</div>
+</div>
+<div class="new">
+	<%= render "partials/form_article"%>
+</div>
+
+<div>
+	<select>
+		<option></option>
+	<%=@groups.each do |group|%>
+		<option><%=group.description%></option>
+	<%end%>
+	</select>
+</div>
